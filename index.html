@@ -20,7 +20,7 @@
 
 
     <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
@@ -48,6 +48,8 @@
 body {
   color: #2f3440;
   background: #fcfbf8;
+  font-size: 17px;
+  line-height: 1.8;
 }
 
 p,
@@ -56,11 +58,18 @@ li {
   color: #2f3440;
 }
 
+li {
+  padding-left: 0.2rem;
+}
+
 h1,
 h2,
 h3,
 h4 {
   color: #2c2340;
+  font-family: "Merriweather", Georgia, serif;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 h2 {
@@ -90,8 +99,43 @@ blockquote {
   border-top: 1px solid #efe7de;
 }
 
+.resume-date {
+  min-width: 180px;
+  font-weight: 600;
+}
+
+#publications h4 {
+  margin-top: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#publications ul {
+  padding-left: 1.3rem;
+}
+
+#publications li {
+  margin-bottom: 1.6rem;
+  line-height: 1.85;
+}
+
+#seminars ul,
+#awards ul,
+#skills ul {
+  padding-left: 1.3rem;
+}
+
+#seminars li,
+#awards li,
+#skills li {
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+}
+
 .subheading {
   line-height: 1.6;
+  font-family: "Open Sans", Arial, sans-serif;
+  letter-spacing: 0.02em;
+  text-transform: none;
 }
 
 .list-social-icons .fa-stack-2x {
@@ -108,18 +152,52 @@ blockquote {
 }
 
 #sideNav {
-  background: linear-gradient(180deg, #43246d 0%, #5a338f 100%) !important;
-  box-shadow: 4px 0 22px rgba(44, 35, 64, 0.14);
+  background: linear-gradient(180deg, #3f235f 0%, #56307f 58%, #69429a 100%) !important;
+  box-shadow: 6px 0 26px rgba(44, 35, 64, 0.16);
+}
+
+#sideNav .navbar-brand {
+  margin-bottom: 1.4rem;
+}
+
+#sideNav .navbar-collapse {
+  align-items: flex-start;
+}
+
+#sideNav .navbar-nav {
+  gap: 0.15rem;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  padding: 0.65rem 1rem;
+  border-radius: 0.9rem;
+  color: rgba(255, 255, 255, 0.88);
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link:hover,
+#sideNav .navbar-nav .nav-item .nav-link:focus {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  transform: translateX(2px);
+}
+
+#sideNav .navbar-nav .nav-item .nav-link.active {
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
 }
 
 #sideNav .navbar-brand .img-profile {
-  border: 0.5rem solid rgba(255, 255, 255, 0.16);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  border: 0.4rem solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.22);
+  border-radius: 1.4rem;
+}
+
+#sideNav .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.28);
 }
 
 a {
@@ -367,6 +445,7 @@ mark {
        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="publications">
         <div class="my-auto">
           <h2 class="mb-5"><ins>Publications</ins></h2>
+          <p align="justify">Selected peer-reviewed publications, oral presentations, and poster presentations drawn from my research activity in condensed matter physics, Raman spectroscopy, fullerides, and related carbon-based systems.</p>
           <h4>Peer-Reviewed Publications</h4>
           <ul>
             <li align="justify">
